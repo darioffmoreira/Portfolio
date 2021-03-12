@@ -146,3 +146,14 @@ nav { display: none; }
         width: calc(100% + 1.5em);
     }
 }
+
+/* My services section */
+
+.my-services {
+    background-color: var(--clr-dark);
+    background-image: url(#);
+    background-size: cover;
+    /* background-blend-mode: multiply; */
+    color: var(--clr-light);
+    text-align: center;
+}
