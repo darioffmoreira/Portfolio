@@ -3,3 +3,24 @@
 *::after {
     box-sizing: border-box;
 }
+
+:root {
+    /* font-family */
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+
+    /* font-weight */
+    --fw-reg: 300;
+    --fw-bold: 800;
+    
+    /* color */
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --crl-accent: #16e0bd;
+
+    /* font-size */
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+}
