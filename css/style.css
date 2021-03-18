@@ -56,7 +56,7 @@ body {
 }
 
 section { 
-    padding: 5em 2em;
+    padding: 1em 2em 4em;
 }
 
 img {
@@ -287,7 +287,7 @@ header {
 
 .my-services {
     background-color: var(--clr-dark);
-    background-image: url('https://loremflickr.com/900/900');
+    background-image: url("../img/bg.jpg");
     background-size: cover;
     background-blend-mode: multiply;
     color: var(--clr-light);
