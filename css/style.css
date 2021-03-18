@@ -331,6 +331,14 @@ header {
     }
 }
 
+/* Shape */
+
+.shape {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 /* About me */
 
 .about-me {
