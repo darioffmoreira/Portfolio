@@ -55,7 +55,7 @@ body {
     line-height: 1.6;
 }
 
-section { 
+section {
     padding: 1em 2em 4em;
 }
 
@@ -141,7 +141,14 @@ h3 { font-size: var(--fs-h3) }
 header {
     display: flex;
     justify-content: space-between;
-    padding: 1em;
+    /* padding: 1em; */
+    padding-top: 6em;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding-top: 2em;
+    }
 }
 
 .logo {
@@ -425,6 +432,7 @@ header {
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
+    height: 40vh;
 }
 
 .footer a {
