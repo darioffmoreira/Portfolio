@@ -145,6 +145,139 @@ header {
     padding-top: 6em;
 }
 
+header [role=progressbar][aria-busy=true] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+    width: 100%;
+    background-color: #0bb4a6;
+    -webkit-animation: preloader-background linear 3.5s infinite;
+            animation: preloader-background linear 3.5s infinite;
+}
+
+header [role=progressbar][aria-busy=true]::before,
+header [role=progressbar][aria-busy=true]::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 0;
+    height: 10px;
+    background: #afa;
+    -webkit-animation: preloader-front linear 3.5s infinite;
+            animation: preloader-front linear 3.5s infinite;
+    content: "";
+}
+
+header [role=progressbar][aria-busy=true]::before {
+    right: 50%;
+}
+
+header [role=progressbar][aria-busy=true]::after {
+    left: 50%;
+}
+  
+@-webkit-keyframes preloader-background {
+    0%, 24.9% {
+        background-color: #0bb4a6;
+    }
+    25%, 49.9% {
+        background-color: #19849C;
+    }
+    50%, 74.9% {
+        background-color: #27c8ec;
+    }
+    75%, 100% {
+        background-color: #FFD200;
+    }
+}
+  
+@keyframes preloader-background {
+    0%, 24.9% {
+        background-color: #0bb4a6;
+    }
+    25%, 49.9% {
+        background-color: #19849C;
+    }
+    50%, 74.9% {
+        background-color: #27c8ec;
+    }
+    75%, 100% {
+        background-color: #FFD200;
+    }
+}
+
+@-webkit-keyframes preloader-front {
+    0% {
+        width: 0;
+        background-color: #19849C;
+    }
+    24.9% {
+        width: 50%;
+        background-color: #19849C;
+    }
+    25% {
+        width: 0;
+        background-color: #27c8ec;
+    }
+    49.9% {
+        width: 50%;
+        background-color: #27c8ec;
+    }
+    50% {
+        width: 0;
+        background-color: #FFD200;
+    }
+    74.9% {
+        width: 50%;
+        background-color: #FFD200;
+    }
+    75% {
+        width: 0%;
+        background-color: #0bb4a6;
+    }
+    100% {
+        width: 50%;
+        background-color: #0bb4a6;
+    }
+}
+
+@keyframes preloader-front {
+    0% {
+        width: 0;
+        background-color: #19849C;
+    }
+    24.9% {
+        width: 50%;
+        background-color: #19849C;
+    }
+    25% {
+        width: 0;
+        background-color: #27c8ec;
+    }
+    49.9% {
+        width: 50%;
+        background-color: #27c8ec;
+    }
+    50% {
+        width: 0;
+        background-color: #FFD200;
+    }
+    74.9% {
+        width: 50%;
+        background-color: #FFD200;
+    }
+    75% {
+        width: 0%;
+        background-color: #0bb4a6;
+    }
+    100% {
+        width: 50%;
+        background-color: #0bb4a6;
+    }
+}
+
 @media (max-width: 600px) {
     header {
         padding-top: 2em;
